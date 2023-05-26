@@ -1,0 +1,11 @@
+.elements__like-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    min-width: 22px;
+    position: absolute;
+    right: 20px;
+    bottom: 22px;
+}
