@@ -1,11 +1,10 @@
-import PopupWithForm from './PopupWithForm';
+import PopupWithForm from "./PopupWithForm.js";
 
-function ConfirmPopup({ isOpen, onClose, onConfirm }) {
+function ConfirmPopup({ card, isOpen, onClose, onOverlayClick, onCardDelete, onTransitionEnd, onLoading, }) {
 
     function handleSubmit(e) {
-        e.preventDefault()
-
-        onConfirm();
+        e.preventDefault();
+        onCardDelete(card);
     }
 
     return (
@@ -13,11 +12,16 @@ function ConfirmPopup({ isOpen, onClose, onConfirm }) {
             name="confirm"
             title="Вы уверены?"
             buttonText="Да"
+            buttonTextOnLoading="Удаление..."
             isOpen={isOpen}
             onClose={onClose}
-            onSubmit={handleSubmit}>
-        </PopupWithForm>
-    )
+            onSubmit={handleSubmit}
+            onOverlayClick={onOverlayClick}
+            onTransitionEnd={onTransitionEnd}
+            onLoading={onLoading}
+            isValid="true"
+        />
+    );
 }
 
 export default ConfirmPopup;

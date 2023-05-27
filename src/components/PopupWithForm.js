@@ -1,27 +1,54 @@
 import React from "react";
 
-function PopupWithForm({ name, title, children, buttonText, isOpen, onClose, onSubmit }) {
+const PopupWithForm = React.forwardRef((
+    {
+        name,
+        title,
+        isOpen,
+        onClose,
+        onSubmit,
+        onLoading,
+        buttonText = "Сохранить",
+        buttonTextOnLoading = "Сохранение",
+        onOverlayClick,
+        onTransitionEnd,
+        isValid,
+        children,
+    }, ref) => {
     return (
-        <div className={`popup ${isOpen ? "popup_opened" : ""}`}>
+        <div
+            className={`popup popup_${name} ${isOpen && "popup_opened"}`}
+            onClick={onOverlayClick}
+            onTransitionEnd={onTransitionEnd}
+        >
             <div className="popup__container">
-                <button
-                    className="popup__button-close"
-                    onClick={onClose}
-                    type="button"
-                />
                 <form
                     className="popup__form"
                     onSubmit={onSubmit}
                     name={name}
                     noValidate
+                    ref={ref}
                 >
                     <h2 className="popup__title">{title}</h2>
                     {children}
-                    <button className="popup__button-submit" type="submit">{buttonText || 'Сохранить'}</button>
+                    <button
+                        type="submit"
+                        className={`popup__button-submit ${!isValid && "popup__button-submit_inactive"}`}
+                    >
+                        {isValid && onLoading ? buttonTextOnLoading : buttonText}
+                    </button>
                 </form>
+                <button
+                    className="popup__button-close"
+                    type="button"
+                    onClick={() => {
+                        onClose(true);
+                    }}
+                ></button>
             </div>
         </div>
-    )
+    );
 }
+);
 
 export default PopupWithForm;

@@ -15,10 +15,6 @@
     background-size: 26px;
     background-color: rgba(0, 0, 0, .8);
     cursor: pointer;
-    opacity: 0;
-    transition: .5s ease-in-out;
-}
-
-.profile__avatar-edit-button:hover {
     opacity: 1;
+    transition: .5s ease-in-out;
 }
