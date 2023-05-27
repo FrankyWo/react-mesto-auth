@@ -16,8 +16,10 @@ import AddPlacePopup from "./AddPlacePopup.js";
 import Register from "./Register.js";
 import Login from "./Login.js";
 import InfoTooltip from "./InfoTooltip.js";
-import api from "./../utils/api"
+import api from "../utils/api.js" 
 import * as auth from "../utils/auth.js";
+
+
 
 function App() {
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
