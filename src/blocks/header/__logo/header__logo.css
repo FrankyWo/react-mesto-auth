@@ -1,14 +1,7 @@
 .header__logo {
-  background-image: url(../../../images/Logo-mesto.white.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 142px;
-  height: 33px;
-}
-
-@media screen and (max-width: 600px) {
-  .header__logo {
-    width: 104px;
-    height: 24px;
-  }
+    background-image: url(../../../images/Logo-mesto.white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 33px;
 }

@@ -1,9 +1,0 @@
-.auth-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 418px;
-  width: 100%;
-  margin: 60px auto;
-  padding: 0 30px;
-  box-sizing: border-box;
-}

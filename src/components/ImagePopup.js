@@ -1,9 +1,8 @@
-function ImagePopup({ card, isOpen, onClose, onOverlayClick, onTransitionEnd, }) {
+function ImagePopup({ card, isOpen, onClose, onOverlayClick, }) {
     return (
         <div
             className={`popup popup_image-form ${isOpen && "popup_opened"}`}
             onClick={onOverlayClick}
-            onTransitionEnd={onTransitionEnd}
         >
             <div className="popup__image-container">
                 <img className="popup__image-place" src={card.link} alt={card.name} />

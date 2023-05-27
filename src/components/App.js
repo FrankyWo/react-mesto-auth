@@ -85,11 +85,11 @@ function App() {
         }
     }, [isPopupOpen, closePopupByEsc]);
 
-    function handleTransitionEnd() {
+    /* function handleTransitionEnd() {
         if (!isPopupOpen) {
             setSelectedCard({});
         }
-    }
+    } */
 
     function handleUpdateAvatar(updateUserAvatar) {
         setIsLoading(true);
@@ -302,7 +302,6 @@ function App() {
                     isOpen={isImagePopupOpen}
                     onClose={closeAllPopups}
                     onOverlayClick={closePopupOverlayClick}
-                    onTransitionEnd={handleTransitionEnd}
                 />
 
                 <EditAvatarPopup
@@ -321,8 +320,6 @@ function App() {
                     onLoading={isLoading}
                 />
 
-
-
                 <AddPlacePopup
                     isOpen={isAddPlacePopupOpen}
                     onClose={closeAllPopups}
@@ -336,7 +333,6 @@ function App() {
                     isOpen={isConfirmPopupOpen}
                     onClose={closeAllPopups}
                     onOverlayClick={closePopupOverlayClick}
-                    onTransitionEnd={handleTransitionEnd}
                     onCardDelete={handleCardDelete}
                     onLoading={isLoading}
                 />
@@ -347,7 +343,6 @@ function App() {
                     registered={registered}
                     onClose={closeAllPopups}
                     onOverlayClick={closePopupOverlayClick}
-                    onTransitionEnd={handleTransitionEnd}
                 />
             </div>
 

@@ -55,10 +55,13 @@
 @import url(../blocks/popup/__tooltip-image/popup__tooltip-image.css);
 @import url(../blocks/popup/__tooltip-title/popup__tooltip-title.css);
 
-@import url(../blocks/auth-form/auth-form.css);
-@import url(../blocks/auth-form/__title/auth-form__title.css);
-@import url(../blocks/auth-form/__input/auth-form__input.css);
-@import url(../blocks/auth-form/__input-error/auth-form__input-error.css);
-@import url(../blocks/auth-form/__button/auth-form__button.css);
-@import url(../blocks/auth-form/__button/_disabled/auth-form__button_disabled.css);
-@import url(../blocks/auth-form/__link/auth-form__link.css);
+@import url(../blocks/auth/auth.css);
+@import url(../blocks/auth/__button/auth__button.css);
+@import url(../blocks/auth/__button/_disabled/auth__button_disabled.css);
+@import url(../blocks/auth/__container/auth__container.css);
+@import url(../blocks/auth/__form/auth__form.css);
+@import url(../blocks/auth/__input-error/auth__input-error.css);
+@import url(../blocks/auth/__input/auth__input.css);
+@import url(../blocks/auth/__input/_type/auth__input_type_error.css);
+@import url(../blocks/auth/__link/auth__link.css);
+@import url(../blocks/auth/__title/auth__title.css);

@@ -38,7 +38,7 @@ function Login({ onSubmit, onTokenCheck, onLoading }) {
             ref={formRef}
         >
             <input
-                className="auth-form__input"
+                className="auth__input"
                 name="email"
                 type="email"
                 minLength="2"
@@ -48,9 +48,9 @@ function Login({ onSubmit, onTokenCheck, onLoading }) {
                 value={values["email"] || ""}
                 required
             />
-            <span className="auth-form__input-error">{errors.email}</span>
+            <span className="auth__input-error">{errors.email}</span>
             <input
-                className="auth-form__input"
+                className="auth__input"
                 name="password"
                 type="password"
                 minLength="5"
@@ -60,7 +60,7 @@ function Login({ onSubmit, onTokenCheck, onLoading }) {
                 value={values["password"] || ""}
                 required
             />
-            <span className="auth-form__input-error">{errors.password}</span>
+            <span className="auth__input-error">{errors.password}</span>
         </AuthForm>
     );
 }

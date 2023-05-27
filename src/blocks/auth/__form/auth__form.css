@@ -4,10 +4,3 @@
     display: flex;
     width: 358px;
 }
-
-@media (max-width: 633px) {
-    .auth-form {
-        width: 270px;
-        margin: 40px;
-    }
-}

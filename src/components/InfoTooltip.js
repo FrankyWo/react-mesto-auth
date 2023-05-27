@@ -1,9 +1,8 @@
-function InfoTooltip({ name, isOpen, registered, onClose, onOverlayClick, onTransitionEnd, }) {
+function InfoTooltip({ name, isOpen, registered, onClose, onOverlayClick, }) {
     return (
         <div
             className={`popup popup_${name} ${isOpen && "popup_opened"}`}
             onClick={onOverlayClick}
-            onTransitionEnd={onTransitionEnd}
         >
             <div className="popup__container">
                 <div className="popup__tooltip-content">

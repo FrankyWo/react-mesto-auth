@@ -16,22 +16,22 @@ const AuthForm = forwardRef((
     ref) => {
     return (
         <form
-            className="auth-form"
+            className="auth"
             action="#"
             name={name}
             onSubmit={handleSubmit}
             noValidate
             ref={ref}
         >
-            <h2 className="auth-form__title">{title}</h2>
+            <h2 className="auth__title">{title}</h2>
             {children}
             <button
                 type="submit"
-                className={`auth-form__button ${!isValid && "auth-form__button_disabled"}`}
+                className={`auth__button ${!isValid && "auth__button_disabled"}`}
             >
                 {isValid && onLoading ? buttonTextOnLoading : buttonText}
             </button>
-            <Link to="/sign-in" className="auth-form__link">
+            <Link to="/sign-in" className="auth__link">
                 {linkText}
             </Link>
         </form>

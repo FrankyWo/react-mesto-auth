@@ -1,6 +1,6 @@
 import PopupWithForm from "./PopupWithForm.js";
 
-function ConfirmPopup({ card, isOpen, onClose, onOverlayClick, onCardDelete, onTransitionEnd, onLoading, }) {
+function ConfirmPopup({ card, isOpen, onClose, onOverlayClick, onCardDelete, onLoading, }) {
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -17,7 +17,7 @@ function ConfirmPopup({ card, isOpen, onClose, onOverlayClick, onCardDelete, onT
             onClose={onClose}
             onSubmit={handleSubmit}
             onOverlayClick={onOverlayClick}
-            onTransitionEnd={onTransitionEnd}
+  
             onLoading={onLoading}
             isValid="true"
         />
