@@ -1,6 +1,7 @@
 {
     "name": "react-mesto-auth",
     "version": "0.1.0",
+    "homepage": "https://frankywo.github.io/react-mesto-auth/",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
@@ -39,7 +40,6 @@
             "last 1 safari version"
         ]
     },
-    "homepage": "https://frankywo.github.io/react-mesto-auth/",
     "devDependencies": {
         "gh-pages": "^5.0.0"
     }
