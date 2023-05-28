@@ -11,6 +11,7 @@ function Main({ cards, onEditProfile, onAddPlace, onEditAvatar, onCardClick, onC
                 <div className="profile__avatar">
                     <img
                         className="profile__avatar-image"
+                        alt="#"
                         src={user.avatar}
                         onClick={() => {
                             onEditAvatar(true);

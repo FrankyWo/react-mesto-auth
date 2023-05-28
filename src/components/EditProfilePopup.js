@@ -6,7 +6,7 @@ import useFormValidation from "../utils/useFormValidation.js";
 function EditProfilePopup({ isOpen, onClose, onOverlayClick, onUpdateUser, onLoading, }) {
 
     const currentUser = useContext(CurrentUserContext);
-    const { values, errors, isValid, handleChange, setValue, reset, formRef } =
+    const { values, isValid, handleChange, setValue, reset, formRef } =
         useFormValidation();
 
     useEffect(() => {

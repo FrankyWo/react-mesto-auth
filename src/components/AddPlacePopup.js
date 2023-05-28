@@ -3,7 +3,7 @@ import useFormValidation from "../utils/useFormValidation.js";
 import PopupWithForm from "./PopupWithForm.js";
 
 function AddPlacePopup({ isOpen, onClose, onOverlayClick, onAddPlace, onLoading, }) {
-    const { values, errors, isValid, handleChange, setValue, reset, formRef } =
+    const { values, isValid, handleChange, setValue, reset, formRef } =
         useFormValidation();
 
     useEffect(() => {
